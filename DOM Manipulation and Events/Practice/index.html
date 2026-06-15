@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Event Listener Example</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        p {
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Listener examples</h1>
+    <p id="para">MouseOver this text to remove the event listener</p>
+    <button id="btn">Change background color</button>
+
+    <script>
+        // Select elements
+        const bodyEl = document.querySelector("body");
+        const para = document.getElementById("para");
+        const btn = document.getElementById("btn");
+
+        // Track background color state
+        let isBgColorGrey = true;
+
+        // Function to toggle between grey and blue
+        function toggleBgColor() {
+            bodyEl.style.backgroundColor = isBgColorGrey ? "blue" : "grey";
+            isBgColorGrey = !isBgColorGrey;
+        }
+
+        // Add event listener to button
+        btn.addEventListener("click", toggleBgColor);
+
+        // Remove the button's event listener when paragraph is hovered
+        para.addEventListener("mouseover", () => {
+            btn.removeEventListener("click", toggleBgColor);
+            para.textContent = "Event listener removed! Button won't work now.";
+        });
+    </script>
+</body>
+
+</html>

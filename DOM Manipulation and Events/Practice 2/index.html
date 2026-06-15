@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Style and ClassList Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Paragraph highlight style */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Menu styles */
+        .menu {
+            display: none;
+            background-color: lightgray;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .menu.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manipulating Styles with JavaScript</h1>
+
+    <!-- Paragraph style change -->
+    <p id="para">This is a paragraph</p>
+    <button id="color-btn">Make Text Red</button>
+    <button id="highlight-btn">Highlight Text</button>
+
+    <hr>
+
+    <!-- Toggle menu -->
+    <button id="toggle-btn">Toggle Menu</button>
+    <nav id="menu" class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+        </ul>
+    </nav>
+
+    <script>
+        // Paragraph element
+        const paraEl = document.getElementById("para");
+
+        // Button: Change color using style property
+        document.getElementById("color-btn").addEventListener("click", () => {
+            paraEl.style.color = "red";
+        });
+
+        // Button: Toggle highlight using classList
+        document.getElementById("highlight-btn").addEventListener("click", () => {
+            paraEl.classList.toggle("highlight");
+        });
+
+        // Toggle menu
+        const menu = document.getElementById("menu");
+        const toggleBtn = document.getElementById("toggle-btn");
+
+        toggleBtn.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Stop Timer Example</h2>
+    <button id="stopBtn">Stop Timer</button>
+    <p id="time">Seconds passed: 0</p>
+    <script>
+        // let timeLeft = 5;
+        // const countdownE1 = document.getElementById("countdown");
+
+        // const countdownID = setInterval(function () {
+        //     countdownE1.textContent = timeLeft;
+        //     timeLeft--;
+
+        //     if (timeLeft < 0) {
+        //         clearInterval(countdownID);
+        //         countdownE1.textContent = "Time's Up!";
+        //     }
+        // }, 1000);
+        // const colors = ["red", "green", "blue", "purple", "orange"];
+        // let index = 0;
+
+        // const colorInterval = setInterval(() => {
+        //     document.body.style.backgroundColor = colors[index];
+        //     index = (index + 1) % colors.length;
+        // }, 1000);
+
+        // //Stop after 10 seconds
+        // setTimeout(() => {
+        //     clearInterval(colorInterval);
+        //     alert("Color changing stopped!");
+        // }, 10000);
+        let seconds = 0;
+        const timeE1 = document.getElementById("time");
+
+        const timerID = setInterval(() => {
+            seconds++;
+            timeE1.textContent = `Seconds passed: ${seconds}`;
+        }, 1000);
+
+        document.getElementById("stopBtn").addEventListener("click", () => {
+            clearInterval(timerID);
+            alert("Timer stopped!");
+        })
+    </script>
+</body>
+
+</html>
