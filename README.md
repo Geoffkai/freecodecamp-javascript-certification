@@ -19,6 +19,8 @@ My personal solutions to the **freeCodeCamp JavaScript Algorithms and Data Struc
 | [JS Fundamentals](./JS%20Fundamentals) | Core JavaScript fundamentals |
 | [DOM Manipulation and Events](./DOM%20Manipulation%20and%20Events) | Interacting with the DOM and handling events |
 | [localStorage and CRUD Operations](./localStorage%20and%20CRUD%20Operations) | Persisting data and CRUD apps (Bookmark Manager, To-Do app) |
+| [Classes](./Classes) | ES6 classes (Project Idea Board, Shopping Cart) |
+| [Certifications Projects](./Certifications%20Projects) | Capstone projects (Drum Machine, Markdown to HTML Converter, Voting System) |
 
 ## About
 
