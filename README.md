@@ -20,7 +20,8 @@ My personal solutions to the **freeCodeCamp JavaScript Algorithms and Data Struc
 | [DOM Manipulation and Events](./DOM%20Manipulation%20and%20Events) | Interacting with the DOM and handling events |
 | [localStorage and CRUD Operations](./localStorage%20and%20CRUD%20Operations) | Persisting data and CRUD apps (Bookmark Manager, To-Do app) |
 | [Classes](./Classes) | ES6 classes (Project Idea Board, Shopping Cart) |
-| [Recursion](./Recursion) | Recursive functions (Countdown, Countup, Decimal to Binary Converter, Range of Numbers Generator) |
+| [Recursion](./Recursion) | Recursive functions (Countdown, Countup, Decimal to Binary Converter, Range of Numbers Generator, Permutation Generator) |
+| [Data Structures](./Data%20Structures) | Implementing data structures (Linked List, Linked List Operations, Stack, Queue) |
 | [Certifications Projects](./Certifications%20Projects) | Capstone projects (Drum Machine, Markdown to HTML Converter, Voting System, Bank Account Management Program) |
 
 ## About
