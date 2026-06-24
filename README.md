@@ -23,6 +23,7 @@ My personal solutions to the **freeCodeCamp JavaScript Algorithms and Data Struc
 | [Recursion](./Recursion) | Recursive functions (Countdown, Countup, Decimal to Binary Converter, Range of Numbers Generator, Permutation Generator) |
 | [Data Structures](./Data%20Structures) | Implementing data structures (Linked List, Linked List Operations, Stack, Queue) |
 | [Algorithms](./Algorithms) | Sorting algorithms (Bubble Sort, Selection Sort, Insertion Sort, Quick Sort) |
+| [Graphs and Trees](./Graphs%20and%20Trees) | Graph algorithms (DFS, Adjacency List to Matrix, Dijkstra's Shortest Path) |
 | [Certifications Projects](./Certifications%20Projects) | Capstone projects (Drum Machine, Markdown to HTML Converter, Voting System, Bank Account Management Program) |
 
 ## About
