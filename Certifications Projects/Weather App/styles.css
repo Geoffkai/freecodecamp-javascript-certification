@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(160deg, #5b8def 0%, #2f6fed 100%);
+  color: #1f2933;
+  padding: 24px;
+}
+
+.page {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#weather-container {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+#location {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#main-temperature {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.weather-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.6rem;
+}
+
+.weather-type p {
+  margin: 0;
+}
+
+#weather-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.05rem;
+}
+
+.details p {
+  margin: 0;
+}
+
+.compass {
+  color: #2f6fed;
+  flex-shrink: 0;
+}
+
+#wind-arrow {
+  transition: transform 0.4s ease;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.controls-label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#city-options {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+#get-weather-btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2f6fed;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+} 
+
+#get-weather-btn:hover {
+  background: #1d54c4;
+}
